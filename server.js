@@ -9,7 +9,7 @@ const resolve = file => path.resolve(__dirname, file)
 const { createBundleRenderer } = require('vue-server-renderer')
 
 const isProd = process.env.NODE_ENV === 'production'
-console.log(process.env.NODE_ENV,'环境')
+
 const useMicroCache = process.env.MICRO_CACHE !== 'false'
 const serverInfo =
   `express/${require('express/package.json').version} ` +
