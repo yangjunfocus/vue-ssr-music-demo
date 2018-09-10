@@ -10,7 +10,6 @@ document.body.appendChild(bar.$el)
 Vue.mixin({
   beforeRouteUpdate (to, from, next) {
     const { asyncData } = this.$options
-    console.log(this.$options,'就')
 
 
     if (asyncData) {
