@@ -30,6 +30,16 @@ export default{
       }).catch((error) => {
         console.log(error)
       })
+    },
+    actionPlaylistDetail:({commit,state},id) =>{
+      // 获取歌单详情
+      return request.get(`http://localhost:3000/playlist/detail?id=${id}`).then((res) => {
+        if (res.statusText === 'OK') {
+          commit('SET_playlist_Detail', res.data)
+        }
+      }).catch((error) => {
+        console.log(error)
+      })
     }
 
 }
