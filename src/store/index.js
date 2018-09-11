@@ -10,7 +10,8 @@ const state = {
   bookInfo:{},
   recom_song_menu:[],
   newest_music:[],
-  hot_music_list:[]
+  hot_music_list:[],
+  playlist_detail:[]
 }
 export function createStore() {
   return new Vuex.Store({
