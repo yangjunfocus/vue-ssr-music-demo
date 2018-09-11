@@ -14,5 +14,8 @@ export default {
   },
   SET_hot_music_list: (state, music) => {
     state.hot_music_list = music
+  },
+  SET_playlist_Detail:(state,list)=>{
+    state.playlist_detail=list
   }
 }
